@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useRecentBookings } from "./useRecentBookings";
-import { useRecentStays } from "./useRecentstays";
+import { useRecentStays } from "./useRecentStays";
 import Spinner from "../../ui/Spinner";
 import Stats from "./Stats";
 import { useCabins } from "../cabins/useCabins";
