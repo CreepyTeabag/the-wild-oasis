@@ -44,7 +44,11 @@ function UpdateUserDataForm() {
   }
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form
+      /* onSubmit={handleSubmit} */ onSubmit={(e) => {
+        e.preventDefault();
+      }}
+    >
       <FormRow label="Email address">
         <Input value={email} disabled />
       </FormRow>
@@ -77,7 +81,9 @@ function UpdateUserDataForm() {
         >
           Cancel
         </Button>
-        <Button disabled={isUpdating}>Update account</Button>
+        <Button /* disabled={isUpdating} */ disabled={true}>
+          Update account
+        </Button>
       </FormRow>
     </Form>
   );
